@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="icon" href="media/logo.png">
+
+    <title>VolgoAirLines</title>
+</head>
+<body>
+
+    <section class="menu">
+        <button>
+            <img class="icon" src="media/logo.png" alt="The user icon doesn't want to download">
+
+            Войти
+        </button>
+
+        <ul>
+            <li><a href="">Акции</a></li>
+            <li><a href="#">Поиск</a></li>
+            <li><a href="#">Регистрация на рейс</a></li>
+        </ul>
+    </section>
+
+    <!-- HEADER -->
+    <header>
+        <div>
+            <a href=""><img class="logo" src="media/logo.png" alt="The logo doesn't download"></a>
+
+            <ul>
+                <li><a href="#stocks">Акции</a></li>
+                <li><a href="#search">Поиск</a></li>
+                <li><a href="#">Регистрация на рейс</a></li>
+            </ul>
+
+            <button>
+                <img class="icon" src="media/user.png" alt="The user icon doesn't want to download">
+
+                Войти
+            </button>
+            <button class="burger" id="burger_menu"></button>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <section class="section_setUp">
+            <div>
+                <h1 class="mainText">Мы сближаем города, вы - живете там, где хотите.</h1>
+
+                <ul class="mainNav">
+                    <li>1. Выбрать удобную дату перелета.</li>
+                    <li>2. Накопить больше 50% бронирований.</li>
+                    <li>3. Получить снижение стоимости.</li>
+                </ul>
+
+                <form action="" id="search">
+                    <label for="where">
+                        <span>Куда</span>
+
+                        <input name="where" type="text" placeholder="Куда">
+                    </label>
+
+                    <label for="fromWhere">
+                        <span>Откуда</span>
+
+                        <input name="fromWhere" type="text" placeholder="Откуда">
+                    </label>
+
+                    <label for="dateStart">
+                        <span class="date">Дата вылета туда</span>
+
+                        <input name="dateStart" type="date">
+                    </label>
+
+                    <label for="dateEnd">
+                        <span  class="date" >Дата вылета обратно</span>
+
+                        <input name="dateEnd" type="date">
+                    </label>
+
+                    <label for="quantity">
+                        <span>Кол-во пассажиров</span>
+
+                        <input name="quantity" type="text" placeholder="Кол-во">
+                    </label>
+
+                    <button>Поиск билетов</button>
+                </form>
+            </div>
+        </section>
+        <section class="section_offers">
+            <div class="card_1">
+                <div>
+                    <h2>Возврат и обмен билетов</h2>
+
+                    <p>Пандемия изменила планы многих путешественников, но мы знаем, что она не будет длиться вечно. 
+                        Как только все это закончится, мы продолжим исследовать этот мир, как и раньше. 
+                        Специальные правила, которые были разработаны для этой непростой ситуации, помогут вам отменить поездку
+                        или отложить на потом.</p>
+
+                    <button>Перейти</button>
+                </div>
+            </div>
+            <div class="card_2">
+                <div>
+                    <h2>Лучшие предложения</h2>
+
+                    <p>Снова увидеть улицы, которые были свидетелями стольких событий. Обнять своих близких и оглянуться назад, чтобы увидеть
+                        то, через что вы прошли. И думать о новых мечтах, которые будут такими особенными!</p>
+
+                    <button>Перейти</button>
+                </div>
+            </div>
+            <div class="card_3">
+                <div>
+                    <h2>Увидимся чаще</h2>
+
+                    <p>С начала января мы расширяем географию полетов по России, чтобы вы могли
+                        Чаще видитесь со своими близкими. Выбирайте нашу компанию, чтобы летать туда, где вас всегда ждут.</p>
+
+                    <button>Перейти</button>
+                </div>
+            </div>
+            <div class="card_4">
+                <div>
+                    <h2>Все снова включено</h2>
+
+                    <p>С 10 августа мы возобновляем полеты в Турцию. Рейсы из Москвы в Анталью будут выполняться дважды
+                        ежедневно в день, а рейсы по маршруту Москва – Даламан будут выполняться от трех до семи раз в неделю.</p>
+
+                    <button>Перейти</button>
+                </div>
+            </div>
+        </section>
+        <section class="section_discript">
+            <form action="" id="stocks">
+                <h2>Акции</h2>
+
+                <label for="email">
+                    <span>E-mail</span>
+
+                    <input name="email" type="text" placeholder="E-mail">
+                </label>
+
+                <button>Подписаться</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div>
+            <div>
+                <a href=""><img class="logo" src="media/logo.png" alt="The logo doesn't download"></a>
+
+                <p>8(996)-555-55-77</p>
+            </div>
+
+            <ul>
+                <li><a href="#stocks">Акции</a></li>
+                <li><a href="#search">Поиск</a></li>
+                <li><a href="#">Регистрация на рейс</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="functions/mainFunc.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
+    <script src="functions/animations.js"></script>
+</body>
+</html>
