@@ -10,7 +10,7 @@
 }
 
 html,
-body { 
+body {
     height: 100vh;
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -97,6 +97,7 @@ button { cursor: pointer; }
     height: 100%;
     width: 100%;
     background: #000;
+    overflow: hidden;
 
     transition: all 1s ease-in-out;
 
@@ -108,9 +109,7 @@ button { cursor: pointer; }
     & ul {
         padding: 10px 20px;
 
-        & li {
-            margin: 10px 0;
-        }
+        & li { margin: 10px 0; }
     }
 
     & button {
@@ -428,6 +427,12 @@ footer {
 }
 
 /*- MEDIA -*/
+@media (max-width: 300px) {
+    footer {
+        & div { justify-content: center; }
+    }
+}
+
 @media (max-width: 650px) {
     header {
         & div {
